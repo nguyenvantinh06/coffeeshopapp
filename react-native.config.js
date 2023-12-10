@@ -1,7 +1,20 @@
 module.exports = {
   project: {
     ios: {
-      automaticPodsInstallation: true
-    }
-  }
-}
+      unstable_reactLegacyComponentNames: [
+        'react-native-fast-image',
+        'CellContainer',
+        'AutoLayoutView'
+      ]
+    },
+    android: {},
+  },
+  assets: ['./src/assets/fonts/'],
+  dependencies: {
+    'react-native-vector-icons': {
+      platforms: {
+        ios: null,
+      },
+    },
+  },
+};
