@@ -6,6 +6,7 @@ import AppView from 'src/components/app-view';
 import AppText from 'src/components/app-text';
 import {COLORS} from 'src/config/theme';
 import VectorIcon from 'src/components/vector-icons';
+import HomeScreen from 'src/screens/HomeScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -35,7 +36,7 @@ const BottomTabStack = () => {
       }}>
       <Tab.Screen
         name="Home"
-        component={Todo}
+        component={HomeScreen}
         options={{
           tabBarIcon: ({focused, color, size}) => (
             <VectorIcon.Feather
