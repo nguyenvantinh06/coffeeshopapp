@@ -23,7 +23,7 @@ import AppText from 'src/components/app-text';
 import HeaderBar from 'src/components/header-bar';
 import AppContainer from 'src/components/app-container';
 import CoffeeCard from 'src/components/coffee-card';
-import {deviceWidth} from 'src/utils/app-const';
+import {SCENE_NAME, deviceWidth} from 'src/utils/app-const';
 import {Platform} from 'react-native';
 import {Alert} from 'react-native';
 
@@ -131,7 +131,10 @@ const HomeScreen = ({navigation}: any) => {
       headerShown={false}
       styleHeader={{backgroundColor: COLORS.primaryBlackHex}}>
       <View style={styles.screenContainer}>
-        <StatusBar backgroundColor={COLORS.primaryBlackHex} />
+        <StatusBar
+          backgroundColor={COLORS.primaryBlackHex}
+          barStyle={'light-content'}
+        />
         <ScrollView
           showsVerticalScrollIndicator={false}
           contentContainerStyle={styles.scrollViewFlex}>
@@ -251,7 +254,7 @@ const HomeScreen = ({navigation}: any) => {
               return (
                 <TouchableOpacity
                   onPress={() => {
-                    navigation.push('Details', {
+                    navigation.push(SCENE_NAME.DETAIL_SCREEN, {
                       index: item.index,
                       id: item.id,
                       type: item.type,
