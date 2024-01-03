@@ -116,7 +116,7 @@ const App: React.FC<IProps> = () => {
   // const isLoggedIn = useAppSelector(state => state.auth.isLoggedIn);
   const isLoggedIn = true;
   React.useEffect(() => {
-    return StatusBar.setBarStyle('dark-content');
+    return StatusBar.setBarStyle('light-content');
   }, []);
 
   return (

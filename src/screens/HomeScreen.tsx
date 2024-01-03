@@ -8,6 +8,8 @@ import {
   View,
   ToastAndroid,
   FlatList,
+  Platform,
+  Alert,
 } from 'react-native';
 import {useStore} from '../store/store';
 import {useBottomTabBarHeight} from '@react-navigation/bottom-tabs';
@@ -24,8 +26,6 @@ import HeaderBar from 'src/components/header-bar';
 import AppContainer from 'src/components/app-container';
 import CoffeeCard from 'src/components/coffee-card';
 import {SCENE_NAME, deviceWidth} from 'src/utils/app-const';
-import {Platform} from 'react-native';
-import {Alert} from 'react-native';
 
 const getCategoriesFromData = (data: any) => {
   let temp: any = {};
@@ -101,7 +101,7 @@ const HomeScreen = ({navigation}: any) => {
     index,
     name,
     roasted,
-    image_link_square,
+    imagelink_square,
     special_ingredient,
     type,
     prices,
@@ -111,7 +111,7 @@ const HomeScreen = ({navigation}: any) => {
       index,
       name,
       roasted,
-      image_link_square,
+      imagelink_square,
       special_ingredient,
       type,
       prices,
@@ -254,7 +254,7 @@ const HomeScreen = ({navigation}: any) => {
               return (
                 <TouchableOpacity
                   onPress={() => {
-                    navigation.push(SCENE_NAME.DETAIL_SCREEN, {
+                    navigation.navigate(SCENE_NAME.DETAIL_SCREEN, {
                       index: item.index,
                       id: item.id,
                       type: item.type,
@@ -265,7 +265,7 @@ const HomeScreen = ({navigation}: any) => {
                     index={item.index}
                     type={item.type}
                     roasted={item.roasted}
-                    image_link_square={item.image_link_square}
+                    image_link_square={item.imagelink_square}
                     name={item.name}
                     special_ingredient={item.special_ingredient}
                     average_rating={item.average_rating}
@@ -305,7 +305,7 @@ const HomeScreen = ({navigation}: any) => {
                     index={item.index}
                     type={item.type}
                     roasted={item.roasted}
-                    image_link_square={item.image_link_square}
+                    image_link_square={item.imagelink_square}
                     name={item.name}
                     special_ingredient={item.special_ingredient}
                     average_rating={item.average_rating}

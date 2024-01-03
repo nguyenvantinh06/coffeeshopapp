@@ -17,6 +17,7 @@ import {
 import AppText from './app-text';
 import VectorIcon from './vector-icons';
 import GradientBGIcon from './gradient-bg-icon';
+import {SVG_PATH} from 'src/utils/svg-path';
 
 interface ImageBackgroundInfoProps {
   EnableBackHandler: boolean;
@@ -61,9 +62,13 @@ const ImageBackgroundInfo: React.FC<ImageBackgroundInfoProps> = ({
                 BackHandler();
               }}>
               <GradientBGIcon
-                name="left"
-                color={COLORS.primaryLightGreyHex}
-                size={FONTSIZE.size_16}
+                icon={
+                  <VectorIcon.Octicons
+                    name="chevron-left"
+                    color={COLORS.primaryLightGreyHex}
+                    size={FONTSIZE.size_16}
+                  />
+                }
               />
             </TouchableOpacity>
             <TouchableOpacity
@@ -73,7 +78,7 @@ const ImageBackgroundInfo: React.FC<ImageBackgroundInfoProps> = ({
               <GradientBGIcon
                 icon={
                   <VectorIcon.Feather
-                    name="like"
+                    name="heart"
                     color={
                       favourite
                         ? COLORS.primaryRedHex
@@ -119,17 +124,8 @@ const ImageBackgroundInfo: React.FC<ImageBackgroundInfoProps> = ({
               </View>
               <View style={styles.ItemPropertiesContainer}>
                 <View style={styles.ProperFirst}>
-                  {/* <CustomIcon
-                    name={type == 'Bean' ? 'bean' : 'beans'}
-                    size={type == 'Bean' ? FONTSIZE.size_18 : FONTSIZE.size_24}
-                    color={COLORS.primaryOrangeHex}
-                  /> */}
-                  <VectorIcon.Feather
-                    name={type == 'Bean' ? 'bean' : 'beans'}
-                    size={type == 'Bean' ? FONTSIZE.size_18 : FONTSIZE.size_24}
-                    color={COLORS.primaryOrangeHex}
-                  />
-                  <Text
+                  <SVG_PATH.COFFEE />
+                  <AppText
                     style={[
                       styles.PropertyTextFirst,
                       {
@@ -140,19 +136,10 @@ const ImageBackgroundInfo: React.FC<ImageBackgroundInfoProps> = ({
                       },
                     ]}>
                     {type}
-                  </Text>
+                  </AppText>
                 </View>
                 <View style={styles.ProperFirst}>
-                  {/* <CustomIcon
-                    name={type == 'Bean' ? 'location' : 'drop'}
-                    size={FONTSIZE.size_16}
-                    color={COLORS.primaryOrangeHex}
-                  /> */}
-                  <VectorIcon.Feather
-                    name={type == 'Bean' ? 'location' : 'drop'}
-                    color={COLORS.primaryOrangeHex}
-                    size={FONTSIZE.size_20}
-                  />
+                  <SVG_PATH.MILK />
                   <AppText style={styles.PropertyTextLast}>
                     {ingredients}
                   </AppText>
@@ -161,11 +148,6 @@ const ImageBackgroundInfo: React.FC<ImageBackgroundInfoProps> = ({
             </View>
             <View style={styles.InfoContainerRow}>
               <View style={styles.RatingContainer}>
-                {/* <CustomIcon
-                  name={'star'}
-                  color={COLORS.primaryOrangeHex}
-                  size={FONTSIZE.size_20}
-                /> */}
                 <VectorIcon.Feather
                   name={'star'}
                   color={COLORS.primaryOrangeHex}

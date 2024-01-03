@@ -23,6 +23,7 @@ const DetailScreen = ({navigation, route}: any) => {
   const ItemOfIndex = useStore((state: any) =>
     route.params.type == 'Coffee' ? state.CoffeeList : state.BeanList,
   )[route.params.index];
+  console.log('ItemOfIndex', ItemOfIndex);
   const addToFavoriteList = useStore((state: any) => state.addToFavoriteList);
   const deleteFromFavoriteList = useStore(
     (state: any) => state.deleteFromFavoriteList,
@@ -73,7 +74,7 @@ const DetailScreen = ({navigation, route}: any) => {
         contentContainerStyle={styles.ScrollViewFlex}>
         <ImageBackgroundInfo
           EnableBackHandler={true}
-          image_link_portrait={ItemOfIndex.image_link_portrait}
+          image_link_portrait={ItemOfIndex.imagelink_portrait}
           type={ItemOfIndex.type}
           id={ItemOfIndex.id}
           favourite={ItemOfIndex.favourite}
