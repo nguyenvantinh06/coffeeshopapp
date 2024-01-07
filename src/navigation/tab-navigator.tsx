@@ -8,6 +8,7 @@ import {COLORS} from 'src/config/theme';
 import VectorIcon from 'src/components/vector-icons';
 import HomeScreen from 'src/screens/HomeScreen';
 import CartScreen from 'src/screens/CartScreen';
+import FavoritesScreen from 'src/screens/FavoritesScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -67,7 +68,7 @@ const BottomTabStack = () => {
       />
       <Tab.Screen
         name="Favorite"
-        component={Todo}
+        component={FavoritesScreen}
         options={{
           tabBarIcon: ({focused, color, size}) => (
             <VectorIcon.Feather
