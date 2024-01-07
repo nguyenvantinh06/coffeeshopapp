@@ -74,7 +74,7 @@ const DetailScreen = ({navigation, route}: any) => {
         contentContainerStyle={styles.ScrollViewFlex}>
         <ImageBackgroundInfo
           EnableBackHandler={true}
-          image_link_portrait={ItemOfIndex.imagelink_portrait}
+          image_link_portrait={ItemOfIndex.image_link_portrait}
           type={ItemOfIndex.type}
           id={ItemOfIndex.id}
           favourite={ItemOfIndex.favourite}

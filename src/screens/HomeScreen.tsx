@@ -101,7 +101,7 @@ const HomeScreen = ({navigation}: any) => {
     index,
     name,
     roasted,
-    imagelink_square,
+    image_link_square,
     special_ingredient,
     type,
     prices,
@@ -111,7 +111,7 @@ const HomeScreen = ({navigation}: any) => {
       index,
       name,
       roasted,
-      imagelink_square,
+      image_link_square,
       special_ingredient,
       type,
       prices,
@@ -265,7 +265,7 @@ const HomeScreen = ({navigation}: any) => {
                     index={item.index}
                     type={item.type}
                     roasted={item.roasted}
-                    image_link_square={item.imagelink_square}
+                    image_link_square={item.image_link_square}
                     name={item.name}
                     special_ingredient={item.special_ingredient}
                     average_rating={item.average_rating}
@@ -305,7 +305,7 @@ const HomeScreen = ({navigation}: any) => {
                     index={item.index}
                     type={item.type}
                     roasted={item.roasted}
-                    image_link_square={item.imagelink_square}
+                    image_link_square={item.image_link_square}
                     name={item.name}
                     special_ingredient={item.special_ingredient}
                     average_rating={item.average_rating}

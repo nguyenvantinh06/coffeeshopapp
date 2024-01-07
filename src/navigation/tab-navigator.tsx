@@ -7,6 +7,7 @@ import AppText from 'src/components/app-text';
 import {COLORS} from 'src/config/theme';
 import VectorIcon from 'src/components/vector-icons';
 import HomeScreen from 'src/screens/HomeScreen';
+import CartScreen from 'src/screens/CartScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -51,7 +52,7 @@ const BottomTabStack = () => {
       />
       <Tab.Screen
         name="Cart"
-        component={Todo}
+        component={CartScreen}
         options={{
           tabBarIcon: ({focused, color, size}) => (
             <VectorIcon.Feather

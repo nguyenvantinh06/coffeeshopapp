@@ -177,6 +177,7 @@ const styles = StyleSheet.create({
   },
   ImageHeaderBarContainerWithBack: {
     padding: SPACING.space_30,
+    paddingTop: SPACING.space_48,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
