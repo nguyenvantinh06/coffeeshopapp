@@ -12,6 +12,7 @@ import {COLORS, SPACING} from 'src/config/theme';
 import HeaderBar from 'src/components/header-bar';
 import EmptyListAnimation from 'src/components/empty-list-animation';
 import FavoritesItemCard from 'src/components/favorites-item-card';
+import {SCENE_NAME} from 'src/utils/app-const';
 
 const FavoritesScreen = ({navigation}: any) => {
   const FavoritesList = useStore((state: any) => state.FavoritesList);
@@ -42,7 +43,7 @@ const FavoritesScreen = ({navigation}: any) => {
                 {FavoritesList.map((data: any) => (
                   <TouchableOpacity
                     onPress={() => {
-                      navigation.push('Details', {
+                      navigation.push(SCENE_NAME.DETAIL_SCREEN, {
                         index: data.index,
                         id: data.id,
                         type: data.type,

@@ -294,7 +294,7 @@ const HomeScreen = ({navigation}: any) => {
               return (
                 <TouchableOpacity
                   onPress={() => {
-                    navigation.push('Details', {
+                    navigation.push(SCENE_NAME.DETAIL_SCREEN, {
                       index: item.index,
                       id: item.id,
                       type: item.type,

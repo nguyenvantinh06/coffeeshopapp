@@ -9,6 +9,7 @@ import VectorIcon from 'src/components/vector-icons';
 import HomeScreen from 'src/screens/HomeScreen';
 import CartScreen from 'src/screens/CartScreen';
 import FavoritesScreen from 'src/screens/FavoritesScreen';
+import OrderHistoryScreen from 'src/screens/OrderHistoryScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -83,7 +84,7 @@ const BottomTabStack = () => {
       />
       <Tab.Screen
         name="History"
-        component={Todo}
+        component={OrderHistoryScreen}
         options={{
           tabBarIcon: ({focused, color, size}) => (
             <VectorIcon.Feather

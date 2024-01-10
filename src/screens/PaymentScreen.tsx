@@ -15,6 +15,7 @@ import LinearGradient from 'react-native-linear-gradient';
 import AppText from 'src/components/app-text';
 import PaymentFooter from 'src/components/payment-footer';
 import PaymentMethod from 'src/components/payment-method';
+import VectorIcon from 'src/components/vector-icons';
 
 const PaymentList = [
   {
@@ -80,12 +81,16 @@ const PaymentScreen = ({navigation, route}: any) => {
               navigation.pop();
             }}>
             <GradientBGIcon
-              name="left"
-              color={COLORS.primaryLightGreyHex}
-              size={FONTSIZE.size_16}
+              icon={
+                <VectorIcon.Feather
+                  name="menu"
+                  color={COLORS.primaryLightGreyHex}
+                  size={FONTSIZE.size_16}
+                />
+              }
             />
           </TouchableOpacity>
-          <Text style={styles.HeaderText}>Payments</Text>
+          <AppText style={styles.HeaderText}>Payments</AppText>
           <View style={styles.EmptyView} />
         </View>
 
@@ -188,7 +193,7 @@ const styles = StyleSheet.create({
   },
   HeaderContainer: {
     paddingHorizontal: SPACING.space_24,
-    paddingVertical: SPACING.space_15,
+    paddingVertical: SPACING.space_48,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
