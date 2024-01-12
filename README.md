@@ -8,7 +8,7 @@
 [![](https://img.shields.io/badge/Facebook-NguyenVanTinh-blue)](https://www.facebook.com/nguyenvantinh06.py/)
 [![](https://img.shields.io/badge/Gmail-nguyenvantinh06%40gmail.com-red)](mailto:nguyenvantinh06@gmail.com)
 
-<center><img src="./client/src/assets/intro/coffeeapp.png" /></center>
+<center><img src="./src/assets/intro/coffeeapp.png" /></center>
 
 The Coffee Shop App is a mobile application developed with React Native, enabling users to explore and discover information about coffee. It uses
 the [The most flexible content workspace Sanity](https://www.sanity.io/) to make content your competitive advantage. Additionally, I have incorporated various enhancements, including the ability to add to cart, view orders lists, and access profile information.
@@ -131,19 +131,19 @@ yarn android
 ### Demo
 
 <div style="display: flex; flex-wrap: wrap">
- <img src="./client/src/assets/intro/home.png" width="250" style="margin: 12">
- <img src="./client/src/assets/intro/home-select.png" width="250" style="margin: 12px">
- <img src="./client/src/assets/intro/coffee-detail.png" width="250" style="margin: 12">
+ <img src="./src/assets/intro/home.png" width="250" style="margin: 12">
+ <img src="./src/assets/intro/home-select.png" width="250" style="margin: 12px">
+ <img src="./src/assets/intro/coffee-detail.png" width="250" style="margin: 12">
 </div>
 <div style="display: flex; flex-wrap: wrap">
- <img src="./client/src/assets/intro/bean-detail.png" width="250" style="margin: 12">
- <img src="./client/src/assets/intro/cart.png" width="250" style="margin: 12">
- <img src="./client/src/assets/intro/favorite.png" width="250" style="margin: 12">
+ <img src="./src/assets/intro/bean-detail.png" width="250" style="margin: 12">
+ <img src="./src/assets/intro/cart.png" width="250" style="margin: 12">
+ <img src="./src/assets/intro/favorite.png" width="250" style="margin: 12">
 </div>
 <div style="display: flex; flex-wrap: wrap">
- <img src="./client/src/assets/intro/payment.png" width="250" style="margin: 12">
- <img src="./client/src/assets/intro/payment-success.png" width="250" style="margin: 12">
- <img src="./client/src/assets/intro/order-history.png" width="250" style="margin: 12">
+ <img src="./src/assets/intro/payment.png" width="250" style="margin: 12">
+ <img src="./src/assets/intro/payment-success.png" width="250" style="margin: 12">
+ <img src="./src/assets/intro/order-history.png" width="250" style="margin: 12">
 </div>
 
 # Learn More
