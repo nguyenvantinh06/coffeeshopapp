@@ -31,6 +31,7 @@ const HeaderBar: React.FC<HeaderBarProps> = ({title}) => {
 const styles = StyleSheet.create({
   HeaderContainer: {
     padding: SPACING.space_30,
+    paddingTop: SPACING.space_48,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',

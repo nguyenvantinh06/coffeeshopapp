@@ -13,6 +13,7 @@ import SignUpScreen from 'src/screens/auth/SignUpScreen';
 import OnboardingScreen from 'src/screens/OnboardingScreen';
 import BottomTabStack from './tab-navigator';
 import DetailScreen from 'src/screens/DetailScreen';
+import PaymentScreen from 'src/screens/PaymentScreen';
 
 const Stack = createNativeStackNavigator();
 const AuthStack = createNativeStackNavigator();
@@ -94,6 +95,10 @@ const LoggedInNavigator = () => {
       screenOptions={{headerShown: false}}>
       <Stack.Screen name={SCENE_NAME.ROOT} component={BottomTabStack} />
       <Stack.Screen name={SCENE_NAME.DETAIL_SCREEN} component={DetailScreen} />
+      <Stack.Screen
+        name={SCENE_NAME.PAYMENT_SCREEN}
+        component={PaymentScreen}
+      />
 
       {/* <Stack.Screen name={SCENE_NAME.CURRENT_TRIP_DETAIL_SCREEN}>
         {props => (

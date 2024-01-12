@@ -7,6 +7,9 @@ import AppText from 'src/components/app-text';
 import {COLORS} from 'src/config/theme';
 import VectorIcon from 'src/components/vector-icons';
 import HomeScreen from 'src/screens/HomeScreen';
+import CartScreen from 'src/screens/CartScreen';
+import FavoritesScreen from 'src/screens/FavoritesScreen';
+import OrderHistoryScreen from 'src/screens/OrderHistoryScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -51,7 +54,7 @@ const BottomTabStack = () => {
       />
       <Tab.Screen
         name="Cart"
-        component={Todo}
+        component={CartScreen}
         options={{
           tabBarIcon: ({focused, color, size}) => (
             <VectorIcon.Feather
@@ -66,7 +69,7 @@ const BottomTabStack = () => {
       />
       <Tab.Screen
         name="Favorite"
-        component={Todo}
+        component={FavoritesScreen}
         options={{
           tabBarIcon: ({focused, color, size}) => (
             <VectorIcon.Feather
@@ -81,7 +84,7 @@ const BottomTabStack = () => {
       />
       <Tab.Screen
         name="History"
-        component={Todo}
+        component={OrderHistoryScreen}
         options={{
           tabBarIcon: ({focused, color, size}) => (
             <VectorIcon.Feather

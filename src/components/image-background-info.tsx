@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   StyleSheet,
-  Text,
   View,
   ImageProps,
   TouchableOpacity,
@@ -77,11 +76,11 @@ const ImageBackgroundInfo: React.FC<ImageBackgroundInfoProps> = ({
               }}>
               <GradientBGIcon
                 icon={
-                  <VectorIcon.Feather
+                  <VectorIcon.MaterialCommunityIcons
                     name="heart"
                     color={
                       favourite
-                        ? COLORS.primaryRedHex
+                        ? COLORS.primaryOrangeHex
                         : COLORS.primaryLightGreyHex
                     }
                     size={FONTSIZE.size_16}
@@ -98,11 +97,11 @@ const ImageBackgroundInfo: React.FC<ImageBackgroundInfoProps> = ({
               }}>
               <GradientBGIcon
                 icon={
-                  <VectorIcon.Feather
-                    name="like"
+                  <VectorIcon.MaterialCommunityIcons
+                    name="heart"
                     color={
                       favourite
-                        ? COLORS.primaryRedHex
+                        ? COLORS.primaryOrangeHex
                         : COLORS.primaryLightGreyHex
                     }
                     size={FONTSIZE.size_16}
@@ -177,6 +176,7 @@ const styles = StyleSheet.create({
   },
   ImageHeaderBarContainerWithBack: {
     padding: SPACING.space_30,
+    paddingTop: SPACING.space_48,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
